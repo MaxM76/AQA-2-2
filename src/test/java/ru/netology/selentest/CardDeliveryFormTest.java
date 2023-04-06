@@ -25,6 +25,6 @@ public class CardDeliveryFormTest {
         form.$("span[data-test-id=phone] input.input__control").setValue("+79270000000");
         form.$("label[data-test-id=agreement]").click();
         form.$$("button").find(exactText("Забронировать")).click();
-        $(withText("Встреча успешно забронирована на")).shouldBe(visible, Duration.ofSeconds(15));
+        $(withText("Встреча успешно забронирована на")).shouldBe(visible, Duration.ofSeconds(1));
     }
 }
